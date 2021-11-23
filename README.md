@@ -21,18 +21,9 @@ We use two stage procedure to train our HyperTransformer. We first pre-train Hyp
 
 ## Pre-training HyperTransformer
 use following codes to pre-train HyperTransformer on the three datasets.
- 1) Pre-training on Pavia Center Dataset: Do following changes to config_HSIT_PRE.json: 
-    `"experiment_name": "Experiments/HSIT_Pre/"`, 
-    `"model": "HSIT_PRE"`, and 
-    `"train_dataset": "pavia_dataset"`.
- 2) Pre-training on Pavia Center Dataset: Do following changes to config_HSIT_PRE.json: 
-    `"experiment_name": "Experiments/HSIT_Pre/"`, 
-    `"model": "HSIT_PRE"`, and 
-    `"train_dataset": "pavia_dataset"`.
- 3) Pre-training on Pavia Center Dataset: Do following changes to config_HSIT_PRE.json: 
-    `"experiment_name": "Experiments/HSIT_Pre/"`, 
-    `"model": "HSIT_PRE"`, and 
-    `"train_dataset": "pavia_dataset"`.
+ 1) Pre-training on Pavia Center Dataset: Change "train_dataset" to "pavia_dataset" in config_HSIT_PRE.json. Then use following commad to pre-train on Pavia Center dataset. `python train.py --config "configs/config_HSIT.json"`.
+ 2) Pre-training on Botswana Dataset: Change "train_dataset" to "botswana4_dataset" in config_HSIT_PRE.json. Then use following commad to pre-train on Pavia Center dataset. `python train.py --config "configs/config_HSIT.json"`.
+ 3) Pre-training on Chikusei Dataset: Change "train_dataset" to "chikusei_dataset" in config_HSIT_PRE.json. Then use following commad to pre-train on Pavia Center dataset. `python train.py --config "configs/config_HSIT.json"`.
 `python train.py --config 'configs/config_HSIT_PRE.json'`
 
 
