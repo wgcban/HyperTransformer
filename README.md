@@ -68,6 +68,13 @@ Next, we fine-tune the MHFA modules in HyperTransformer starting from pre-traine
     Then use following commad to pre-train on Pavia Center dataset. 
     
     `python train.py --config configs/config_HSIT.json --resume ./Experiments/HSIT_PRE/chikusei_dataset/N_modules\(4\)/best_model.pth`.
+    
+# Trained models, final prediction outputs, and model summary.
+You can download trained models and final prediction outputs through the follwing links for each dataset.
+  1) Pavia Center: [Download here](https://www.dropbox.com/sh/9zg0wrbq6fzx1wa/AACH3mnRlqkVFmo6BF4wcDdaa?dl=0)
+  2) Botswana: [Download here](https://www.dropbox.com/sh/e7og46hkn3wuaxr/AACrFOpOSFF2u0hG1CzNYVRxa?dl=0)
+  3) Chikusei: [Download here](https://www.dropbox.com/sh/l6gaf723cb6asq4/AABPBUleyZ7aFX8POh_d5jC9a?dl=0)
+
 
 
 
