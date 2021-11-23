@@ -2,7 +2,7 @@
 Official PyTorch implementation of the paper: **HyperTransformer: A Textural and Spectral Feature Fusion Transformer for Pansharpening**.
 
 ## Introduction
-<p float="center">
+<p align="center">
   <img src="/imgs/HyperTransformer-intro.jpg" width="600" />
 </p>
 
