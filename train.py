@@ -33,7 +33,7 @@ def ensure_dir(file_path):
 
 __dataset__ = {"pavia_dataset": pavia_dataset, "botswana_dataset": botswana_dataset, "chikusei_dataset": chikusei_dataset, "botswana4_dataset": botswana4_dataset}
 
-# PARSE THE ARGS
+# Parse the arguments
 parser = argparse.ArgumentParser(description='PyTorch Training')
 parser.add_argument('-c', '--config', default='configs/config_PANNET.json',type=str,
                         help='Path to the config file')
