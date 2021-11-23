@@ -19,7 +19,7 @@ We use three publically available HSI datasets for experiments, namely
 # Training HyperTransformer 
 We use two stage procedure to train our HyperTransformer. We first train the backbone of HyperTrasnformer and then fine-tune the MHFA modules. This way we get better results and faster convergence instead of training whole network at once.
 
-## Training the HyperTransformer without MHFA
+## Training the Backbone of HyperTrasnformer
 Use the following codes to pre-train HyperTransformer on the three datasets.
  1) Pre-training on Pavia Center Dataset: 
     
@@ -42,8 +42,8 @@ Use the following codes to pre-train HyperTransformer on the three datasets.
      `python train.py --config configs/config_HSIT_PRE.json`.
      
 
-## Fine tuining the MHFA in HyperTransformer
-Next, we fine-tune the MHFA module in HyperTransformer starting from pre-trained weights we obtained in the previous step.
+## Fine-tuning the MHFA modules in HyperTrasnformer
+Next, we fine-tune the MHFA modules in HyperTransformer starting from pre-trained backbone from the previous step.
  1) Fine-tuning MHFA on Pavia Center Dataset: 
 
     Change "train_dataset" to "pavia_dataset" in config_HSIT.json. 
