@@ -69,7 +69,7 @@ Next, we fine-tune the MHFA modules in HyperTransformer starting from pre-traine
     
     `python train.py --config configs/config_HSIT.json --resume ./Experiments/HSIT_PRE/chikusei_dataset/N_modules\(4\)/best_model.pth`.
     
-# Trained models, final prediction outputs, and model summary.
+# Trained models and pansharpened results on test set.
 You can download trained models and final prediction outputs through the follwing links for each dataset.
   1) Pavia Center: [Download here](https://www.dropbox.com/sh/9zg0wrbq6fzx1wa/AACH3mnRlqkVFmo6BF4wcDdaa?dl=0)
   2) Botswana: [Download here](https://www.dropbox.com/sh/e7og46hkn3wuaxr/AACrFOpOSFF2u0hG1CzNYVRxa?dl=0)
