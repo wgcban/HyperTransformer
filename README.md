@@ -16,5 +16,17 @@ We use three publically available HSI datasets for experiments, namely
   2) Run `process_botswana.m` in `./datasets/botswana4/` to generate cubic patches.
   3) Run `process_chikusei.m` in `./datasets/chikusei/` to generate cubic patches.
  
+# Training HyperTransformer 
+We use two stage procedure to train our HyperTransformer. We first pre-train HyperTransformer without proposed multi-head attention and then finetune the complete HyperTransformer with multi-head attention.
 
-pavia_centre
+## Pre-training HyperTransformer
+use following codes to pre-train HyperTransformer on the three datasets.
+ 1) Training on "Pavia Center Dataset": Change `"experiment_name": "Experiments/HSIT_Pre/"`, `"model": "HSIT_PRE"`, and `"train_dataset": "pavia_dataset"`.
+ 3) 
+`python train.py --config 'configs/config_HSIT_PRE.json'`
+
+
+
+## Fine tuining HyperTransformer
+
+
