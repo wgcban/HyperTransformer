@@ -28,9 +28,17 @@ Use the following codes to pre-train HyperTransformer on the three datasets.
 
 ## Fine tuining the MHFA in HyperTransformer
 Use the following codes to fine-tune complete HyperTransformer on the three datasets.
- 1) Fine-tuning on Pavia Center Dataset: Change "train_dataset" to "pavia_dataset" in config_HSIT.json. Then use following commad to train HyperTransformer on Pavia Center dataset. `python train.py --config "configs/config_HSIT.json --resume ./Experiments/HSIT/pavia_dataset/N_modules\(4\)/best_model.pth" `.
- 2) Fine-tuning on Botswana Dataset: Change "train_dataset" to "botswana4_dataset" in config_HSIT.json. Then use following commad to pre-train on Pavia Center dataset. `python train.py --config "configs/config_HSIT.json" --resume ./Experiments/HSIT/botswana4/N_modules\(4\)/best_model.pth`.
- 3) Fine-tuning on Chikusei Dataset: Change "train_dataset" to "chikusei_dataset" in config_HSIT.json. Then use following commad to pre-train on Pavia Center dataset. `python train.py --config "configs/config_HSIT.json" --resume ./Experiments/HSIT/chikusei_dataset/N_modules\(4\)/best_model.pth`.
+ 1) Fine-tuning on Pavia Center Dataset: Change "train_dataset" to "pavia_dataset" in config_HSIT.json. Then use following commad to train HyperTransformer on Pavia Center dataset. 
+   
+   `python train.py --config "configs/config_HSIT.json --resume ./Experiments/HSIT/pavia_dataset/N_modules\(4\)/best_model.pth" `.
+   
+ 3) Fine-tuning on Botswana Dataset: Change "train_dataset" to "botswana4_dataset" in config_HSIT.json. Then use following commad to pre-train on Pavia Center dataset. 
+   
+   `python train.py --config "configs/config_HSIT.json" --resume ./Experiments/HSIT/botswana4/N_modules\(4\)/best_model.pth`.
+   
+ 5) Fine-tuning on Chikusei Dataset: Change "train_dataset" to "chikusei_dataset" in config_HSIT.json. Then use following commad to pre-train on Pavia Center dataset. 
+    
+    `python train.py --config "configs/config_HSIT.json" --resume ./Experiments/HSIT/chikusei_dataset/N_modules\(4\)/best_model.pth`.
 `python train.py --config 'configs/config_HSIT_PRE.json'`
 
 
