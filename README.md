@@ -23,16 +23,16 @@ Figure 2. Overall  structure  of  the  proposed  HyperTrans-former for textural-
 Figure 3. The complete pansharperning network. Note that we apply  HyperTransformer at three scales: x1&#8593;, x2&#8593;, and x4&#8593;. RBs denotes the residual blocks.
 
 
-# Setting up virtual conda environments
-Setup a virtual conda environment using the provided environment.yml file.
+# Setting up a virtual conda environment.
+Setup a virtual conda environment using the provided **environment.yml** file.
 
 # Download datasets
 
 We use three publically available HSI datasets for experiments, namely
 
-1) Pavia Center scene [Download the .mat file here](http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes), and save it in "./datasets/pavia_centre/Pavia_centre.mat".
-2) Botswana [Download the .mat file here](http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes), and save it in "./datasets/botswana4/Botswana.mat".
-3) Chikusei datasets [Download the .mat file here](https://naotoyokoya.com/Download.html), and save it in "./datasets/chikusei/chikusei.mat".
+1) **Pavia Center scene** [Download the .mat file here](http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes), and save it in "./datasets/pavia_centre/Pavia_centre.mat".
+2) **Botswana dataset**[Download the .mat file here](http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes), and save it in "./datasets/botswana4/Botswana.mat".
+3) **Chikusei dataset** [Download the .mat file here](https://naotoyokoya.com/Download.html), and save it in "./datasets/chikusei/chikusei.mat".
 
  # Processing the datasets to generate LR-HSI, PAN, and Reference-HR-HSI using Wald's protocol
  We use Wald's protocol to generate LR-HSI and PAN image. To generate those cubic patches,
@@ -41,7 +41,9 @@ We use three publically available HSI datasets for experiments, namely
   3) Run `process_chikusei.m` in `./datasets/chikusei/` to generate cubic patches.
  
 # Training HyperTransformer 
-We use two stage procedure to train our HyperTransformer. We first train the backbone of HyperTrasnformer and then fine-tune the MHFA modules. This way we get better results and faster convergence instead of training whole network at once.
+We use two stage procedure to train our HyperTransformer. 
+
+We first train the backbone of HyperTrasnformer and then fine-tune the MHFA modules. This way we get better results and faster convergence instead of training whole network at once.
 
 ## Training the Backbone of HyperTrasnformer
 Use the following codes to pre-train HyperTransformer on the three datasets.
