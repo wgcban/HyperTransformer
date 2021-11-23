@@ -12,9 +12,9 @@ We use three publically available HSI datasets for experiments, namely
 
  # Processing the datasets to generate LR-HSI, PAN, and Reference-HR-HSI using Wald's protocol
  We use Wald's protocol to generate LR-HSI and PAN image. To generate those cubic patches,
-  1) Run process_pavia.m in "./datasets/pavia_centre/" to generate cubic patches. 
-  2) Run process_botswana.m in "./datasets/botswana4/" to generate cubic patches.
-  3) Run process_chikusei.m in "./datasets/chikusei/" to generate cubic patches.
+  1) Run `process_pavia.m` in `./datasets/pavia_centre/` to generate cubic patches. 
+  2) Run `process_botswana.m` in `./datasets/botswana4/` to generate cubic patches.
+  3) Run `process_chikusei.m` in `./datasets/chikusei/` to generate cubic patches.
  
 
 pavia_centre
