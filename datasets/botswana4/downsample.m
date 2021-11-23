@@ -8,7 +8,6 @@ function [Y,BluKer]=downsample(X,ratio,size_kernel,sig,start_pos)
     % Output: 
     % Y:      blurred and downsampled image
     % BluKer: the blurring kernel
-    %  AUTHOR: Qi WEI, University of Toulouse, qi.wei@n7.fr
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % generating the kernel
     BluKer = fspecial('gaussian',[size_kernel(1) size_kernel(2)],sig);
