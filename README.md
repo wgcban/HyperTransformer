@@ -6,7 +6,7 @@ Official PyTorch implementation of the paper: **HyperTransformer: A Textural and
   <img src="/imgs/HyperTransformer-intro.jpg" width="600" />
 </p>
 
-Figure 1. How our **HyperTransformer** differs from existing pansharpening architectures. Traditional pansharpening methods simply concatenate PAN and LR-HSI in **(a)** image domain or **(b)** feature domain to learn the mapping function from LR-HSI to pansharpened HSI. In contrast, **(c)** our HyperTransformer utilizes feature representations of LR-HSI, PAN &#8593; &#8595;, and PAN as Queries (Q), Keys (K), and Values (V) in an attention mechanism to transfer most relevant HR textural features to spectral features of LR-HSI from a backbone network.
+Figure 1. How our **HyperTransformer** differs from existing pansharpening architectures. Traditional pansharpening methods simply concatenate PAN and LR-HSI in **(a)** image domain or **(b)** feature domain to learn the mapping function from LR-HSI to pansharpened HSI. In contrast, **(c)** our HyperTransformer utilizes feature representations of LR-HSI, PAN &#8593;&#8595;, and PAN as Queries (Q), Keys (K), and Values (V) in an attention mechanism to transfer most relevant HR textural features to spectral features of LR-HSI from a backbone network.
 
 ## Architecture of our **HyperTransformer**
 <p align="center">
