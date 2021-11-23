@@ -1,0 +1,109 @@
+{
+    "name": "Spectral_Fusion_Transformer",
+    "experim_name": "Experiments/HSIT",
+    "model": "HSIT_PRE",
+    "N_modules": 2,
+    "train_dataset": "botswana4_dataset",
+    "is_DHP_MS": false,
+    "train_batch_size": 8,
+    "val_batch_size": 1,
+    "num_workers": 2,
+
+    "optimizer": {
+        "type": "ADAM",
+        "args":{
+            "lr": 1e-4,
+            "weight_decay": 1e-4,
+            "momentum": 0.99
+        },
+        "step_size": 8000,
+        "gamma": 0.1
+    },
+
+    "trainer": {
+        "total_epochs": 10000,
+        "is_small_patch_train": false,
+        "patch_size": 128,
+        "iter_size": 1,
+        "test_freq": 5
+    },
+
+    "pavia_dataset": {
+        "data_dir": "./datasets/pavia_centre/pavia/",
+        "spectral_bands": 102,
+        "LR_size": 40,
+        "HR_size": 160,
+        "augmentation": false,
+        "max_value": 8000,
+        "factor": 4,
+        "optimal_lambda": 0.8,
+        "loss_type": "L1",
+        "Normalized_L1": true,
+        "VGG_Loss": false,
+        "Transfer_Periferal_Loss": false,
+        "VGG_Loss_F": 0.1,
+        "Transfer_Periferal_Loss_F": 0.1,
+        "R": 10,
+        "G": 30,
+        "B": 60,
+        "Spatial_Loss": false,
+        "Spatial_Loss_F": 1.0
+    },
+
+    "botswana_dataset": {
+        "data_dir": "./datasets/botswana/botswana/",
+        "spectral_bands": 145,
+        "LR_size": 40,
+        "HR_size": 120,
+        "augmentation": false,
+        "max_value": 8000,
+        "factor": 3,
+        "optimal_lambda": 0.8
+        },
+        
+    "chikusei_dataset": {
+        "data_dir": "./datasets/chikusei/chikusei/",
+        "spectral_bands": 128,
+        "LR_size": 64,
+        "HR_size": 256,
+        "augmentation": false,
+        "max_value": 9725,
+        "factor": 4,
+        "optimal_lambda": 0.8,
+        "loss_type": "L1",
+        "Normalized_L1": true,
+        "VGG_Loss": false,
+        "Transfer_Periferal_Loss": false,
+        "VGG_Loss_F": 0.1,
+        "Transfer_Periferal_Loss_F": 0.01,
+        "R": 10,
+        "G": 35,
+        "B": 61,
+        "Spatial_Loss": false,
+        "Spatial_Loss_F": 1.0
+        },
+    
+    "botswana4_dataset": {
+        "data_dir": "./datasets/botswana4/botswana4/",
+        "spectral_bands": 145,
+        "LR_size": 30,
+        "HR_size": 120,
+        "augmentation": false,
+        "max_value": 7365,
+        "factor": 4,
+        "optimal_lambda": 0.8,
+        "loss_type": "L1",
+        "Normalized_L1": true,
+        "VGG_Loss": false,
+        "Transfer_Periferal_Loss": false,
+        "VGG_Loss_F": 0.1,
+        "Transfer_Periferal_Loss_F": 0.01,
+        "R": 29,
+        "G": 20,
+        "B": 12,
+        "Spatial_Loss": false,
+        "Spatial_Loss_F": 1.0,
+        "multi_scale_loss": false,
+        "multi_scale_loss_F": 0.2
+        }
+}
