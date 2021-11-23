@@ -1,7 +1,3 @@
-# Spectral Transformer
-# Author: Chaminda Bandara
-# Date: 07/06/2021
-
 import torch
 import torch.nn.functional as F
 from torch import nn
