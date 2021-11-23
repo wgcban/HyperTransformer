@@ -27,18 +27,25 @@ Use the following codes to pre-train HyperTransformer on the three datasets.
 `python train.py --config 'configs/config_HSIT_PRE.json'`
 
 ## Fine tuining the MHFA in HyperTransformer
-Use the following codes to fine-tune complete HyperTransformer on the three datasets.
- 1) Fine-tuning on Pavia Center Dataset: Change "train_dataset" to "pavia_dataset" in config_HSIT.json. Then use following commad to train HyperTransformer on Pavia Center dataset. 
+Next, we fine-tune the MHFA module in HyperTransformer starting from pre-trained weights we obtained in the previous step.
+ 1) Fine-tuning MHFA on Pavia Center Dataset: 
+
+    Change "train_dataset" to "pavia_dataset" in config_HSIT.json. 
+    Then use the following commad to train HyperTransformer on Pavia Center dataset. 
+    Please specify path to best model obtained from previous step using --resume.
+    `python train.py --config "configs/config_HSIT.json --resume ./Experiments/HSIT_PRE/pavia_dataset/N_modules\(4\)/best_model.pth" `.
    
-`python train.py --config "configs/config_HSIT.json --resume ./Experiments/HSIT_PRE/pavia_dataset/N_modules\(4\)/best_model.pth" `.
-   
- 3) Fine-tuning on Botswana Dataset: Change "train_dataset" to "botswana4_dataset" in config_HSIT.json. Then use following commad to pre-train on Pavia Center dataset. 
-   
-`python train.py --config "configs/config_HSIT.json" --resume ./Experiments/HSIT_PRE/botswana4/N_modules\(4\)/best_model.pth`.
-   
- 5) Fine-tuning on Chikusei Dataset: Change "train_dataset" to "chikusei_dataset" in config_HSIT.json. Then use following commad to pre-train on Pavia Center dataset. 
-    
-`python train.py --config "configs/config_HSIT.json" --resume ./Experiments/HSIT_PRE/chikusei_dataset/N_modules\(4\)/best_model.pth`.
+ 3) Fine-tuning on Botswana Dataset: 
+
+    Change "train_dataset" to "botswana4_dataset" in config_HSIT.json. 
+    Then use following commad to pre-train on Pavia Center dataset. 
+    `python train.py --config "configs/config_HSIT.json" --resume ./Experiments/HSIT_PRE/botswana4/N_modules\(4\)/best_model.pth`.
+
+ 5) Fine-tuning on Chikusei Dataset: 
+
+    Change "train_dataset" to "chikusei_dataset" in config_HSIT.json. 
+    Then use following commad to pre-train on Pavia Center dataset.    
+    `python train.py --config "configs/config_HSIT.json" --resume ./Experiments/HSIT_PRE/chikusei_dataset/N_modules\(4\)/best_model.pth`.
 
 
 
