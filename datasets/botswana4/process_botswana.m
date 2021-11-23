@@ -1,7 +1,3 @@
-% Written by: Chaminda Bandara (wbandar1@jhu.edu/ chaminda.bandara@eng.pdn.ac.lk)
-% Date: June-16-2021
-% This function process the botswana dataset and generates ref, y, pan patches
-% in seperate folders.
 
 clear all
 close all
