@@ -51,7 +51,7 @@ Next, we fine-tune the MHFA module in HyperTransformer starting from pre-trained
     Then use the following commad to train HyperTransformer on Pavia Center dataset. 
     
     Please specify path to best model obtained from previous step using --resume.
-    `python train.py --config configs/config_HSIT.json --resume ./Experiments/HSIT_PRE/pavia_dataset/N_modules\(4\)/best_model.pth" `.
+    `python train.py --config configs/config_HSIT.json --resume ./Experiments/HSIT_PRE/pavia_dataset/N_modules\(4\)/best_model.pth`.
    
  3) Fine-tuning on Botswana Dataset: 
 
