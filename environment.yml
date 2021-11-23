@@ -1,4 +1,4 @@
-name: CCT
+name: HT
 channels:
   - defaults
   - conda-forge
