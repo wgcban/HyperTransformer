@@ -21,7 +21,7 @@ We use two stage procedure to train our HyperTransformer. We first pre-train Hyp
 
 ## Pre-training HyperTransformer
 use following codes to pre-train HyperTransformer on the three datasets.
- 1) Training on "Pavia Center Dataset": Change `"experiment_name": "Experiments/HSIT_Pre/"`, `"model": "HSIT_PRE"`, and `"train_dataset": "pavia_dataset"`.
+ 1) Training on "Pavia Center Dataset": Do following changes to config_HSIT_PRE.json: `"experiment_name": "Experiments/HSIT_Pre/"`, `"model": "HSIT_PRE"`, and `"train_dataset": "pavia_dataset"`.
  3) 
 `python train.py --config 'configs/config_HSIT_PRE.json'`
 
