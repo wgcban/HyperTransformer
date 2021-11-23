@@ -1,6 +1,6 @@
 {
     "name": "Spectral_Fusion_Transformer",
-    "experim_name": "Experiments/HSIT_v9/Ablation_Loss/case3/",
+    "experim_name": "Experiments/HSIT/",
     "model": "HSIT",
     "N_modules": 4,
     "train_dataset": "pavia_dataset",
