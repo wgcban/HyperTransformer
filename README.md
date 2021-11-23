@@ -1,5 +1,5 @@
 # HyperTransformer
-Official PyTorch implementation of the paper: HyperTransformer: A Textural and Spectral Feature Fusion Transformer for Pansharpening
+Official PyTorch implementation of the paper: **HyperTransformer: A Textural and Spectral Feature Fusion Transformer for Pansharpening**.
 
 # Setting up virtual conda environments
 Setup a virtual conda environment using the provided environment.yml file.
