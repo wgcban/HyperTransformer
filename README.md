@@ -17,7 +17,7 @@ We use three publically available HSI datasets for experiments, namely
   3) Run `process_chikusei.m` in `./datasets/chikusei/` to generate cubic patches.
  
 # Training HyperTransformer 
-We use two stage procedure to train our HyperTransformer. We first train HyperTransformer without proposed MHFA and then fine-tune MHFA.
+We use two stage procedure to train our HyperTransformer. We first train the backbone of HyperTrasnformer and then fine-tune the MHFA modules. This way we get better results and faster convergence instead of training whole network at once.
 
 ## Training the HyperTransformer without MHFA
 Use the following codes to pre-train HyperTransformer on the three datasets.
@@ -26,20 +26,20 @@ Use the following codes to pre-train HyperTransformer on the three datasets.
     Change "train_dataset" to "pavia_dataset" in config_HSIT_PRE.json. 
     
     Then use following commad to pre-train on Pavia Center dataset.
-    `python train.py --config "configs/config_HSIT_PRE.json"`.
+    `python train.py --config configs/config_HSIT_PRE.json`.
     
  4) Pre-training on Botswana Dataset:
      Change "train_dataset" to "botswana4_dataset" in config_HSIT_PRE.json. 
      
      Then use following commad to pre-train on Pavia Center dataset. 
-     `python train.py --config "configs/config_HSIT_PRE.json"`.
+     `python train.py --config configs/config_HSIT_PRE.json`.
      
  6) Pre-training on Chikusei Dataset: 
      
      Change "train_dataset" to "chikusei_dataset" in config_HSIT_PRE.json. 
      
      Then use following commad to pre-train on Pavia Center dataset. 
-     `python train.py --config "configs/config_HSIT_PRE.json"`.
+     `python train.py --config configs/config_HSIT_PRE.json`.
      
 
 ## Fine tuining the MHFA in HyperTransformer
