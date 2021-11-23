@@ -17,7 +17,7 @@ Figure 2. Overall  structure  of  the  proposed  HyperTrans-former for textural-
 
 ## Complete pansharpening network
 <p align="center">
-  <img src="/imgs/HyperTransformer-complete_network.jpg" width="600" />
+  <img src="/imgs/HyperTransformer-complete_network.jpg" width="800" />
 </p>
 
 Figure 3. The complete pansharperning network. Note that we apply  HyperTransformer at three scales: $\times1 \uparrow$, $\times2 \uparrow$, and $\times4 \uparrow$. RBs denotes the residual blocks.
