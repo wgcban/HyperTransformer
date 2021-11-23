@@ -13,6 +13,14 @@ Figure 1. How our **HyperTransformer** differs from existing pansharpening archi
   <img src="/imgs/HyperTransformer-Hyper-Transformer.jpg" width="600" />
 </p>
 
+Figure 2. Overall  structure  of  the  proposed  HyperTrans-former for textural-spectral feature fusion.
+
+## Complete pansharpening network
+<p align="center">
+  <img src="/imgs/HyperTransformer-complete_network.jpg" width="600" />
+</p>
+
+Figure 3. The complete pansharperning network. Note that we apply  HyperTransformer at three scales: $\times1 \uparrow$, $\times2 \uparrow$, and $\times4 \uparrow$. RBs denotes the residual blocks.
 
 
 # Setting up virtual conda environments
