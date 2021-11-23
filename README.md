@@ -1,6 +1,16 @@
 # HyperTransformer
 Official PyTorch implementation of the paper: **HyperTransformer: A Textural and Spectral Feature Fusion Transformer for Pansharpening**.
 
+## Introduction
+<p float="left">
+  <img src="/imgs/img1.png" width="200" />
+  <img src="/imgs/img2.png" width="200" /> 
+  <img src="/imgs/cm.png" width="200" /> 
+  <img src="/imgs/lasvegas.gif" width="200" />
+</p>
+Figure 1. How our **HyperTransformer** differs from existing pansharpening architectures. Traditional pansharpening methods simply concatenate PAN and LR-HSI in **(a)** image domain or **(b)** feature domain to learn the mapping function from LR-HSI to pansharpened HSI. In contrast, **(c)** our HyperTransformer utilizes feature representations of LR-HSI, PAN$\downarrow \uparrow$, and PAN as Queries (Q), Keys (K), and Values (V) in an attention mechanism to transfer most relevant HR textural features to spectral features of LR-HSI from a backbone network.
+
+
 # Setting up virtual conda environments
 Setup a virtual conda environment using the provided environment.yml file.
 
