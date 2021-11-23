@@ -1,7 +1,3 @@
-% Written by: Chaminda Bandara (wbandar1@jhu.edu/ chaminda.bandara@eng.pdn.ac.lk)
-% Date: May-24-2021
-% This function process the chikusei dataset and generates ref, y, pan patches
-% in seperate folders.
 
 clear all
 close all
