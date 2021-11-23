@@ -17,17 +17,17 @@ We use three publically available HSI datasets for experiments, namely
   3) Run `process_chikusei.m` in `./datasets/chikusei/` to generate cubic patches.
  
 # Training HyperTransformer 
-We use two stage procedure to train our HyperTransformer. We first pre-train HyperTransformer without proposed multi-head attention and then finetune the complete HyperTransformer with multi-head attention.
+We use two stage procedure to train our HyperTransformer. We first train HyperTransformer without proposed MHFA and then fine-tune MHFA.
 
-## Pre-training HyperTransformer
+## Training the HyperTransformer without MHFA
 use following codes to pre-train HyperTransformer on the three datasets.
- 1) Pre-training on Pavia Center Dataset: Change "train_dataset" to "pavia_dataset" in config_HSIT_PRE.json. Then use following commad to pre-train on Pavia Center dataset. `python train.py --config "configs/config_HSIT.json"`.
- 2) Pre-training on Botswana Dataset: Change "train_dataset" to "botswana4_dataset" in config_HSIT_PRE.json. Then use following commad to pre-train on Pavia Center dataset. `python train.py --config "configs/config_HSIT.json"`.
- 3) Pre-training on Chikusei Dataset: Change "train_dataset" to "chikusei_dataset" in config_HSIT_PRE.json. Then use following commad to pre-train on Pavia Center dataset. `python train.py --config "configs/config_HSIT.json"`.
+ 1) Pre-training on Pavia Center Dataset: Change "train_dataset" to "pavia_dataset" in config_HSIT_PRE.json. Then use following commad to pre-train on Pavia Center dataset. `python train.py --config "configs/config_HSIT_PRE.json"`.
+ 2) Pre-training on Botswana Dataset: Change "train_dataset" to "botswana4_dataset" in config_HSIT_PRE.json. Then use following commad to pre-train on Pavia Center dataset. `python train.py --config "configs/config_HSIT_PRE.json"`.
+ 3) Pre-training on Chikusei Dataset: Change "train_dataset" to "chikusei_dataset" in config_HSIT_PRE.json. Then use following commad to pre-train on Pavia Center dataset. `python train.py --config "configs/config_HSIT_PRE.json"`.
 `python train.py --config 'configs/config_HSIT_PRE.json'`
 
 
+## Fine tuining the MHFA in HyperTransformer
 
-## Fine tuining HyperTransformer
 
 
