@@ -23,7 +23,7 @@ Figure 2. Overall  structure  of  the  proposed  HyperTrans-former for textural-
 Figure 3. The complete pansharperning network. Note that we apply  HyperTransformer at three scales: x1&#8593;, x2&#8593;, and x4&#8593;. RBs denotes the residual blocks.
 
 
-# Setting up a virtual conda environment.
+# Setting up a virtual conda environment
 Setup a virtual conda environment using the provided **environment.yml** file.
 
 # Download datasets
@@ -34,7 +34,7 @@ We use three publically available HSI datasets for experiments, namely
 2) **Botswana dataset**[Download the .mat file here](http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes), and save it in "./datasets/botswana4/Botswana.mat".
 3) **Chikusei dataset** [Download the .mat file here](https://naotoyokoya.com/Download.html), and save it in "./datasets/chikusei/chikusei.mat".
 
- # Processing the datasets to generate LR-HSI, PAN, and Reference-HR-HSI using Wald's protocol
+# Processing the datasets to generate LR-HSI, PAN, and Reference-HR-HSI using Wald's protocol
  We use Wald's protocol to generate LR-HSI and PAN image. To generate those cubic patches,
   1) Run `process_pavia.m` in `./datasets/pavia_centre/` to generate cubic patches. 
   2) Run `process_botswana.m` in `./datasets/botswana4/` to generate cubic patches.
