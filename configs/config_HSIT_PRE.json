@@ -1,5 +1,5 @@
 {
-    "name": "Spectral_Fusion_Transformer",
+    "name": "HyperTransformer: A Textural and Spectral Feature Fusion Transformer for Pansharpening",
     "experim_name": "Experiments/HSIT",
     "model": "HSIT_PRE",
     "N_modules": 4,

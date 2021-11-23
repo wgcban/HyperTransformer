@@ -44,21 +44,21 @@ parser.add_argument('-d', '--device', default=None, type=str,
 parser.add_argument('--local', action='store_true', default=False)
 args = parser.parse_args()
 
-# LOADING THE CONFIG FILE
+# Loading the config file
 config = json.load(open(args.config))
 torch.backends.cudnn.benchmark = True
 
-# SEEDS
+# Set seeds.
 torch.manual_seed(7)
 
-# NUMBER OF GPUs
+# Setting number of GPUS available for training.
 num_gpus = torch.cuda.device_count()
 
-# MODEL
+# Selecting the model.
 model = MODELS[config["model"]](config)
 print(f'\n{model}\n')
 
-# SENDING MODEL TO DEVICE
+# Sending model to GPU  device.
 if num_gpus > 1:
     print("Training with multiple GPUs ({})".format(num_gpus))
     model = nn.DataParallel(model).cuda()
@@ -66,7 +66,7 @@ else:
     print("Single Cuda Node is avaiable")
     model.cuda()
 
-# DATA LOADERS
+# Setting up training and testing dataloaderes.
 print("Training with dataset => {}".format(config["train_dataset"]))
 train_loader = data.DataLoader(
                         __dataset__[config["train_dataset"]](
@@ -92,11 +92,11 @@ test_loader = data.DataLoader(
                         pin_memory=False,
                     )
 
-# INITIALIZATION OF PARAMETERS
+# Initialization of hyperparameters. 
 start_epoch = 1
 total_epochs = config["trainer"]["total_epochs"]
 
-# OPTIMIZER
+# Setting up optimizer.
 if config["optimizer"]["type"] == "SGD":
     optimizer = optim.SGD(
         model.parameters(), 
@@ -113,12 +113,12 @@ elif config["optimizer"]["type"] == "ADAM":
 else:
     exit("Undefined optimizer type")
 
-# LEARNING RATE SHEDULER
+# Learning rate sheduler. 
 scheduler = optim.lr_scheduler.StepLR(  optimizer, 
                                         step_size=config["optimizer"]["step_size"], 
                                         gamma=config["optimizer"]["gamma"])
 
-# IF RESUME
+# Resume...
 if args.resume is not None:
     print("Loading from existing FCN and copying weights to continue....")
     checkpoint = torch.load(args.resume)
@@ -127,7 +127,7 @@ else:
     # initialize_weights(model)
     initialize_weights_new(model)
 
-# LOSS
+# Setting up loss functions.
 if config[config["train_dataset"]]["loss_type"] == "L1":
     criterion   = torch.nn.L1Loss()
     HF_loss     = torch.nn.L1Loss()
@@ -144,13 +144,13 @@ if config[config["train_dataset"]]["VGG_Loss"]:
 if config[config["train_dataset"]]["Spatial_Loss"]:
     Spatial_loss = Spatial_Loss(in_channels = config[config["train_dataset"]]["spectral_bands"]).cuda()
 
-# TRAIN EPOCH
+# Training epoch.
 def train(epoch):
     train_loss = 0.0
     model.train()
     optimizer.zero_grad()
     for i, data in enumerate(train_loader, 0):
-        # Reading data
+        # Reading data.
         _, MS_image, PAN_image, reference = data
 
         # Making Smaller Patches for the training
@@ -205,7 +205,7 @@ def train(epoch):
 
     writer.add_scalar('Loss/train', loss, epoch)
     
-# TEST EPPOCH
+# Testing epoch.
 def test(epoch):
     test_loss   = 0.0
     cc          = 0.0
@@ -324,7 +324,7 @@ def test(epoch):
                 "psnr": float(psnr)}
     return image_dict, pred_dic, metrics
 
-# SETTING UP TENSORBOARD and COPY JSON FILE TO SAVE DIRECTORY
+# Setting up tensorboard and copy .json file to save directory.
 PATH = "./"+config["experim_name"]+"/"+config["train_dataset"]+"/"+"N_modules("+str(config["N_modules"])+")"
 ensure_dir(PATH+"/")
 writer = SummaryWriter(log_dir=PATH)
@@ -337,7 +337,7 @@ with open(PATH+"/"+"model_summary.txt", 'w+') as f:
     print(f'\n{model}\n')
     sys.stdout = original_stdout 
 
-# MAIN LOOP
+# Main loop.
 best_psnr   =0.0
 for epoch in range(start_epoch, total_epochs):
     scheduler.step(epoch)
