@@ -3,6 +3,10 @@ Official PyTorch implementation of our CVPR'22 paper: **HyperTransformer: A Text
 
 [Wele Gedara Chaminda Bandara](https://www.wgcban.com/), and [Vishal M. Patel](https://engineering.jhu.edu/vpatel36/sciencex_teams/vishalpatel/)
 
+Johns Hopkins University
+
+Department of Electrical and Computer Engineering, Baltimore, MD 21218, USA
+
 ## Introduction
 <p align="center">
   <img src="/imgs/HyperTransformer-intro.jpg" width="600" />
