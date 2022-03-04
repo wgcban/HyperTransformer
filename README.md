@@ -3,9 +3,6 @@ Official PyTorch implementation of our CVPR'22 paper: **HyperTransformer: A Text
 
 [Wele Gedara Chaminda Bandara](https://www.wgcban.com/), and [Vishal M. Patel](https://engineering.jhu.edu/vpatel36/sciencex_teams/vishalpatel/)
 
-Johns Hopkins University
-
-Department of Electrical and Computer Engineering, Baltimore, MD 21218, USA
 
 ## Introduction
 <p align="center">
@@ -31,6 +28,10 @@ Figure 3. The complete pansharperning network. Note that we apply  HyperTransfor
 
 # Setting up a virtual conda environment
 Setup a virtual conda environment using the provided **environment.yml** file.
+```
+conda env create --name=HyperTransformer --file=environment.yaml
+conda activate HyperTransformer
+```
 
 # Download datasets
 
