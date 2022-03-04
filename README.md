@@ -27,9 +27,14 @@ Figure 3. The complete pansharperning network. Note that we apply  HyperTransfor
 
 
 # Setting up a virtual conda environment
-Setup a virtual conda environment using the provided **environment.yml** file.
+Setup a virtual conda environment using the provided ``environment.yml`` file or ``requirements.txt``.
 ```
-conda env create --name=HyperTransformer --file=environment.yaml
+conda env create --name HyperTransformer --file environment.yaml
+conda activate HyperTransformer
+```
+or
+```
+conda create --name HyperTransformer --file requirements.txt
 conda activate HyperTransformer
 ```
 
