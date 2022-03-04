@@ -2,9 +2,7 @@
 Official PyTorch implementation of our CVPR'22 paper: **HyperTransformer: A Textural and Spectral Feature Fusion Transformer for Pansharpening**.
 
 [Wele Gedara Chaminda Bandara](https://www.wgcban.com/), and [Vishal M. Patel](https://engineering.jhu.edu/vpatel36/sciencex_teams/vishalpatel/)
-
 Johns Hopkins University
-
 Department of Electrical and Computer Engineering, Baltimore, MD 21218, USA
 
 ## Introduction
