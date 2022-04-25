@@ -43,9 +43,9 @@ conda activate HyperTransformer
 
 We use three publically available HSI datasets for experiments, namely
 
-1) **Pavia Center scene** [Download the .mat file here](http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes), and save it in "./datasets/pavia_centre/Pavia_centre.mat".
-2) **Botswana dataset**[Download the .mat file here](http://www.ehu.eus/ccwintco/index.php/Hyperspectral_Remote_Sensing_Scenes), and save it in "./datasets/botswana4/Botswana.mat".
-3) **Chikusei dataset** [Download the .mat file here](https://naotoyokoya.com/Download.html), and save it in "./datasets/chikusei/chikusei.mat".
+1) **Pavia Center scene** [Download the .mat file here](https://www.dropbox.com/s/znykgpipttircdr/Pavia_centre.mat?dl=0), and save it in "./datasets/pavia_centre/Pavia_centre.mat".
+2) **Botswana dataset**[Download the .mat file here](https://www.dropbox.com/s/w5bie03gaeuu6t9/Botswana.mat?dl=0), and save it in "./datasets/botswana4/Botswana.mat".
+3) **Chikusei dataset** [Download the .mat file here](http://park.itc.u-tokyo.ac.jp/sal/hyperdata/Hyperspec_Chikusei_MATLAB.zip), and save it in "./datasets/chikusei/chikusei.mat".
 
 # Processing the datasets to generate LR-HSI, PAN, and Reference-HR-HSI using Wald's protocol
  We use Wald's protocol to generate LR-HSI and PAN image. To generate those cubic patches,
