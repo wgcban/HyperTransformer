@@ -1,9 +1,9 @@
 # HyperTransformer: A Textural and Spectral Feature Fusion Transformer for Pansharpening (CVPR'22)
 
-[Wele Gedara Chaminda Bandara](https://www.wgcban.com/), and [Vishal M. Patel](https://engineering.jhu.edu/vpatel36/sciencex_teams/vishalpatel/)
+[`Wele Gedara Chaminda Bandara`](https://www.wgcban.com/), and [`Vishal M. Patel`](https://engineering.jhu.edu/vpatel36/sciencex_teams/vishalpatel/)
 
 
-For more information, please see our paper at [arxiv](https://arxiv.org/abs/2203.02503). 
+For more information, please see our paper at [`arxiv`](https://arxiv.org/abs/2203.02503). 
 
 ## Introduction
 <p align="center">
@@ -43,9 +43,9 @@ conda activate HyperTransformer
 
 We use three publically available HSI datasets for experiments, namely
 
-1) **Pavia Center scene** [Download the .mat file here](https://www.dropbox.com/s/znykgpipttircdr/Pavia_centre.mat?dl=0), and save it in "./datasets/pavia_centre/Pavia_centre.mat".
-2) **Botswana dataset**[Download the .mat file here](https://www.dropbox.com/s/w5bie03gaeuu6t9/Botswana.mat?dl=0), and save it in "./datasets/botswana4/Botswana.mat".
-3) **Chikusei dataset** [Download the .mat file here](https://naotoyokoya.com/Download.html), and save it in "./datasets/chikusei/chikusei.mat".
+1) **Pavia Center scene** [`Download the .mat file here`](https://www.dropbox.com/s/znykgpipttircdr/Pavia_centre.mat?dl=0), and save it in "./datasets/pavia_centre/Pavia_centre.mat".
+2) **Botswana dataset**[`Download the .mat file here`](https://www.dropbox.com/s/w5bie03gaeuu6t9/Botswana.mat?dl=0), and save it in "./datasets/botswana4/Botswana.mat".
+3) **Chikusei dataset** [`Download the .mat file here`](https://naotoyokoya.com/Download.html), and save it in "./datasets/chikusei/chikusei.mat".
 
 # Processing the datasets to generate LR-HSI, PAN, and Reference-HR-HSI using Wald's protocol
  We use Wald's protocol to generate LR-HSI and PAN image. To generate those cubic patches,
@@ -110,9 +110,9 @@ Next, we fine-tune the MHFA modules in HyperTransformer starting from pre-traine
     
 # Trained models and pansharpened results on test-set
 You can download trained models and final prediction outputs through the follwing links for each dataset.
-  1) Pavia Center: [Download here](https://www.dropbox.com/sh/9zg0wrbq6fzx1wa/AACH3mnRlqkVFmo6BF4wcDdaa?dl=0)
-  2) Botswana: [Download here](https://www.dropbox.com/sh/e7og46hkn3wuaxr/AACrFOpOSFF2u0hG1CzNYVRxa?dl=0)
-  3) Chikusei: [Download here](https://www.dropbox.com/sh/l6gaf723cb6asq4/AABPBUleyZ7aFX8POh_d5jC9a?dl=0)
+  1) Pavia Center: [`Download here`](https://www.dropbox.com/sh/9zg0wrbq6fzx1wa/AACH3mnRlqkVFmo6BF4wcDdaa?dl=0)
+  2) Botswana: [`Download here`](https://www.dropbox.com/sh/e7og46hkn3wuaxr/AACrFOpOSFF2u0hG1CzNYVRxa?dl=0)
+  3) Chikusei: [`Download here`](https://www.dropbox.com/sh/l6gaf723cb6asq4/AABPBUleyZ7aFX8POh_d5jC9a?dl=0)
 
 
 
