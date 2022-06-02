@@ -7,7 +7,7 @@ For more information, please see our paper at [`arxiv`](https://arxiv.org/abs/22
 
 ## Summary
 <p align="center">
-  <img src="/imgs/poster.jpg" />
+  <img src="/imgs/poster.pdf" />
 </p>
 
 
