@@ -103,6 +103,7 @@ You can download trained models and final prediction outputs through the follwin
   3) Chikusei: [`Download here`](https://www.dropbox.com/sh/l6gaf723cb6asq4/AABPBUleyZ7aFX8POh_d5jC9a?dl=0)
 
 # Citation
+If you find our work useful, please consider citing our paper.
 ```
 @InProceedings{Bandara_2022_CVPR,
     author    = {Bandara, Wele Gedara Chaminda and Patel, Vishal M.},
