@@ -102,6 +102,17 @@ You can download trained models and final prediction outputs through the follwin
   2) Botswana: [`Download here`](https://www.dropbox.com/sh/e7og46hkn3wuaxr/AACrFOpOSFF2u0hG1CzNYVRxa?dl=0)
   3) Chikusei: [`Download here`](https://www.dropbox.com/sh/l6gaf723cb6asq4/AABPBUleyZ7aFX8POh_d5jC9a?dl=0)
 
+# Citation
+```
+@InProceedings{Bandara_2022_CVPR,
+    author    = {Bandara, Wele Gedara Chaminda and Patel, Vishal M.},
+    title     = {HyperTransformer: A Textural and Spectral Feature Fusion Transformer for Pansharpening},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2022},
+    pages     = {1767-1777}
+}
+```
 
 
 
