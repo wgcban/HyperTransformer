@@ -4,7 +4,10 @@
 
 
 For more information, please see our 
-- paper at [`arxiv`](https://arxiv.org/abs/2203.02503). 
+- paper: [`CVPR-2022-Open-Access`](https://openaccess.thecvf.com/content/CVPR2022/html/Bandara_HyperTransformer_A_Textural_and_Spectral_Feature_Fusion_Transformer_for_Pansharpening_CVPR_2022_paper.html) or [`arxiv`](https://arxiv.org/abs/2203.02503).
+- Poster: [`view here`](https://www.dropbox.com/s/6gw64uo2j327yp1/poster.pdf?dl=0)
+- Video Presentation: [`view here`](https://www.dropbox.com/s/twf90mbzjmev7yl/CVPR-HyperTransformer.mp4?dl=0)
+- Presentation Slides: [`download here`](https://www.dropbox.com/s/odki2ikymkoh85r/Presentation.pptx?dl=0)
 
 ## Summary
 <p align="center">
