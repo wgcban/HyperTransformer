@@ -3,7 +3,8 @@
 [`Wele Gedara Chaminda Bandara`](https://www.wgcban.com/), and [`Vishal M. Patel`](https://engineering.jhu.edu/vpatel36/sciencex_teams/vishalpatel/)
 
 
-For more information, please see our paper at [`arxiv`](https://arxiv.org/abs/2203.02503). 
+For more information, please see our 
+- paper at [`arxiv`](https://arxiv.org/abs/2203.02503). 
 
 ## Summary
 <p align="center">
